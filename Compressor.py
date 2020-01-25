@@ -39,7 +39,7 @@ class Compressor(tk.Tk):
         self.size_lab.config(text = '{0:.2f} mb'.format(int(os.stat(self.file).st_size)/1048576))
         
     def pic_compress(self):
-        'This is a function that takes in a picture and decompresses it'
+        'This is a function that takes in a picture and compresses it'
         Compressed_folder = os.path.join(self.WrkDir + '/compressed')
         if Compressed_folder:
             if not os.access(Compressed_folder, os.F_OK) : os.mkdir(Compressed_folder)
